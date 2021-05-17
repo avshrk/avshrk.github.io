@@ -63,8 +63,22 @@
       <pre> 
         <code class="elixir" >
           colors = %{ color: "red" }
+          cars = %{  "sedan" => "toyota"}
         </code>
       </pre>
     </div>
+
+    <p onclick="toggle()" id="code" >
+    Access map element
+    </p>
+    <div >
+      <pre> 
+        <code class="elixir" >
+          colors[:color] 
+          cars["sedan"]
+        </code>
+      </pre>
+    </div>
+
   </body>
 </html>
