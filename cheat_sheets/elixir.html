@@ -57,6 +57,7 @@
     <p onclick="toggle('0')" >
     Create a map.
     </p>
+
       <pre> 
         <code class="elixir" id="0" style="display:none" >
           colors = %{ color: "red" }
@@ -67,6 +68,7 @@
     <p onclick="toggle('1')" >
     Access map element
     </p>
+
       <pre> 
         <code class="elixir" id="1" style="display:none">
           colors[:color] 
@@ -75,17 +77,21 @@
       </pre>
 
     <p onclick="toggle('2')" >
+    Properties of keyword list
     </p>
       <pre> 
-        <code class="elixir" id="2" style="display:none" >
+        <code class="text" id="2" style="display:none" >
+        keys must be atoms
+        keys are ordered
+        keys can be duplicated
         </code>
       </pre>
 
-    <p onclick="toggle('')" >
+    <p onclick="toggle('3')" >
     Update a map
     </p>
       <pre> 
-        <code class="elixir" id="" style="display:none" >
+        <code class="elixir" id="3" style="display:none" >
         colors 
         |> Map.put(:first, "green")
 
@@ -93,10 +99,10 @@
         </code>
       </pre>
 
-    <p onclick="toggle('')" >
+    <p onclick="toggle('4')" >
     </p>
       <pre> 
-        <code class="elixir" id="" style="display:none" >
+        <code class="elixir" id="4" style="display:none" >
         colors
         |> Map.put(:new_prop, new_value)
         </code>
