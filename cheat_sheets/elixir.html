@@ -46,34 +46,31 @@
     <script>hljs.highlightAll();</script>
     <script>
       function toggle() {
-              var x = document.getElementById("code");
-              if (x.style.display === "none") {
-                      x.style.display = "block";
-                    } else {
-                            x.style.display = "none";
-                    }
+              var x = document.getElementById(div_name);
+              return if (x.style.display === "none")  x.style.display = "block";
+              x.style.display = "none";
             }
     </script>
     <h1> Elixir </h1>
 
-    <p onclick="toggle()" id="code" >
+    <p onclick="toggle('code1')" >
     Create a map.
     </p>
     <div >
       <pre> 
-        <code class="elixir" >
+        <code class="elixir" id="code1"  >
           colors = %{ color: "red" }
           cars = %{  "sedan" => "toyota"}
         </code>
       </pre>
     </div>
 
-    <p onclick="toggle()" id="code" >
+    <p onclick="toggle('code2')" >
     Access map element
     </p>
     <div >
       <pre> 
-        <code class="elixir" >
+        <code class="elixir" id="code2">
           colors[:color] 
           cars["sedan"]
         </code>
