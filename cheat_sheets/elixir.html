@@ -236,9 +236,14 @@
 </html>
 
     <span onclick="toggle('')" >
+      Implement a list length algorithm
     </span>
       <pre> 
         <code class="elixir" id="" style="display:none" >
+        defmodule MyList do
+          def len([]), do: 0
+          def len([_h | tail ]), do: 1 + len(tail)
+        end
         </code>
       </pre>
 
