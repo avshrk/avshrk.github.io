@@ -45,7 +45,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
     <script>
-      function myFunction() {
+      function toggle() {
               var x = document.getElementById("code");
               if (x.style.display === "none") {
                       x.style.display = "block";
@@ -59,7 +59,7 @@
     <p>
     Create a map.
     </p>
-    <div id="code" >
+    <div onclick="toggle()" id="code" >
       <pre> 
         <code class="elixir" >
           colors = %{ color: "red" }
