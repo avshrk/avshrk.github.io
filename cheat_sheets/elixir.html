@@ -228,10 +228,10 @@
     </span>
       <pre> 
         <code class="elixir" id="19" style="display:none" >
-        defmodule MyList do
-          def len([]), do: 0
-          def len([_h | tail ]), do: 1 + len(tail)
-        end
+          defmodule MyList do
+            def len([]), do: 0
+            def len([_h | tail ]), do: 1 + len(tail)
+          end
         </code>
       </pre>
 
@@ -247,6 +247,17 @@
         </code>
       </pre>
 
+    <span onclick="toggle('21')" >
+      Create a Map functionality: takes function and applies to each element in the list
+    </span>
+      <pre> 
+        <code class="elixir" id="21" style="display:none" >
+          defmodule MyMap do
+            def map([], func), do: []
+            def map([h | tail], func), do: [func.(h) | map(tail, func)]
+          end
+        </code>
+      </pre>
 
     <span onclick="toggle('0')" >
     </span>
