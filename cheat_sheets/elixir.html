@@ -82,9 +82,14 @@
       </pre>
 
     <p onclick="toggle('')" >
+    Update a map
     </p>
       <pre> 
         <code class="elixir" id="" style="display:none" >
+        colors 
+        |> Map.put(:first, "green")
+
+        %{colors | first: "green"}
         </code>
       </pre>
 
